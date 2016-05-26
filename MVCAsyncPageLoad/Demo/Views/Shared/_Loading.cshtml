@@ -1,0 +1,29 @@
+﻿@model MVCAsyncPageLoad.Models.AsyncPageLoadModel
+@{
+    Layout = null;
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Razor engine translate "&" to "&amp;", it makes server failed to parse parameters correctly.
+        // so we encode/decode url here.
+        $.ajax(
+            {
+                url: decodeURIComponent("@Model.TargetURL"),
+                type: "@Model.HttpMethod",
+                data: decodeURIComponent("@Model.ParametersInJSON"),
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (htmlResult) {
+                    $("#@Model.DivContentID").html(htmlResult);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $('#@Model.DivContentID').html(jqXHR.responseText);
+                }
+            });
+    })
+</script>
+
+<div id="@Model.DivContentID" style="width:inherit; height:inherit">
+    <img src="@Url.Content("~/Content/images/loading.gif")" alt="Now loading..." style="width:20px; height:20px; display:block; margin:auto; background-color:transparent" />
+</div>
