@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoReleaseTool", "AutoReleaseTool\AutoReleaseTool.csproj", "{0FA3A4D0-7241-4737-BEC6-07825D352C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARTCore", "ARTCore\ARTCore.csproj", "{76980D54-AE01-4008-B469-69E540423428}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.23.247:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AutoReleaseTool\\AutoReleaseTool.csproj
+		SccProjectName1 = AutoReleaseTool
+		SccLocalPath1 = AutoReleaseTool
+		SccProjectUniqueName2 = ARTCore\\ARTCore.csproj
+		SccProjectName2 = ARTCore
+		SccLocalPath2 = ARTCore
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA3A4D0-7241-4737-BEC6-07825D352C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA3A4D0-7241-4737-BEC6-07825D352C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA3A4D0-7241-4737-BEC6-07825D352C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA3A4D0-7241-4737-BEC6-07825D352C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76980D54-AE01-4008-B469-69E540423428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76980D54-AE01-4008-B469-69E540423428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76980D54-AE01-4008-B469-69E540423428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76980D54-AE01-4008-B469-69E540423428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

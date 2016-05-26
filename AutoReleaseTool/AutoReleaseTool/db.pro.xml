@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <preferMergeOps>
+    <operation name="VIPABC, dev to stage" srcRepo="VIPABC" srcBranch="dev" destRepo="VIPABC" destBranch="stage"></operation>
+    <operation name="VJr, dev to stage" srcRepo="VJr" srcBranch="dev" destRepo="VJr" destBranch="stage"></operation>
+    <operation name="IMS, dev to stage" srcRepo="IMS" srcBranch="dev" destRepo="IMS" destBranch="stage"></operation>
+    <operation name="ClueIMS, dev to stage" srcRepo="ClueIMS" srcBranch="dev" destRepo="ClueIMS" destBranch="stage"></operation>
+  </preferMergeOps>
+  <repositories>
+    <repository name="VIPABC">
+		<branch name="dev" uri="http://192.168.23.64/svn/vipabc/dev" localPath="D:\Workspace\vipabc\dev"/>
+      	<branch name="stage" uri="http://192.168.23.64/svn/vipabc/stage" localPath="D:\Workspace\vipabc\stage"/>
+    </repository>
+    <repository name="VJr">
+     	<branch name="dev" uri="https://dev.tutorabc.com:8443/svn/www.vipabcjr.com/branches/dev" localPath="D:\Workspace\vipabcJr\dev"/>
+      	<branch name="stage" uri="https://dev.tutorabc.com:8443/svn/www.vipabcjr.com/stage" localPath="D:\Workspace\vipabcJr\stage"/>
+    </repository>
+    <repository name="IMS">
+      <branch name="dev" uri="http://192.168.23.64/svn/ims/dev" localPath="D:\Workspace\ims1.0\dev"/>
+      <branch name="stage" uri="http://192.168.23.64/svn/ims/stage" localPath="D:\Workspace\ims1.0\stage"/>
+    </repository>
+    <repository name="ClueIMS">
+      <branch name="dev" uri="http://192.168.23.64/svn/clue-ims/dev" localPath="D:\Workspace\CuleIMS\dev"/>
+      <branch name="stage" uri="http://192.168.23.64/svn/clue-ims/stage" localPath="D:\Workspace\CuleIMS\stage"/>
+    </repository>
+  </repositories>
+</config>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="AutoReleaseTool.PathTreeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="600" 
+             Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+             Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <TreeView Name="tvPaths" 
+               Grid.Row="0" Grid.Column="0"
+               FontSize="12" Padding="0" Margin="0" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <preferMergeOps>
+    <operation name="pdtest, dev to pro" srcRepo="PDTest" srcBranch="dev" destRepo="PDTest" destBranch="pro"></operation>
+    <operation name="pdtest, pro to dev" srcRepo="PDTest" srcBranch="pro" destRepo="PDTest" destBranch="dev"></operation>
+    <operation name="pdtest.dev to pdtest2.imagebank" srcRepo="PDTest" srcBranch="dev" destRepo="PDTest2" destBranch="imagebank"></operation>
+    <operation name="pdtest2.imagebank to pdtest.pro" srcRepo="PDTest2" srcBranch="imagebank" destRepo="PDTest" destBranch="pro"></operation>
+  </preferMergeOps>
+  <repositories>
+    <repository name="PDTest">
+      <branch name="dev" uri="https://win-rlgo209bt4d.vipabc.com/svn/PD/branches/dev" localPath="D:\Workspace\test\branches\dev"/>
+      <branch name="pro" uri="https://win-rlgo209bt4d.vipabc.com/svn/PD/trunk" localPath="D:\Workspace\test\trunk"/>
+    </repository>
+    <repository name="PDTest2">
+      <branch name="imagebank" uri="https://win-rlgo209bt4d.vipabc.com/svn/PD2/branches/imagebank" localPath="D:\Workspace\test2\branches\imagebank"/>
+      <branch name="pro" uri="https://win-rlgo209bt4d.vipabc.com/svn/PD2/trunk" localPath="D:\Workspace\test2\trunk"/>
+    </repository>
+  </repositories>
+</config>
